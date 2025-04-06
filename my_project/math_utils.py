@@ -14,7 +14,7 @@ def median(nums):
 
 # Return the sample standard deviation
 def stddev(nums):
-    if not nums:
+    if len(nums) < 2:
         return None
     return statistics.stdev(nums)
 
